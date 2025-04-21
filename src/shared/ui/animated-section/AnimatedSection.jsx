@@ -20,6 +20,7 @@ const AnimatedSection = ({ children }) => {
   initial={{ opacity: 0, y: 180, scale: 1.1 }}
   animate={controls}
   transition={{ duration: 1, ease: 'easeOut' }}
+  className="pt-[-100px]"
 >
   {children}
 </motion.div>
