@@ -1,4 +1,4 @@
-import step1 from "../../../shared/assets/svg/start.svg"
+import step1 from "../../../shared/assets/svg/START.svg"
 import step2 from "../../../shared/assets/svg/months.svg"
 import step3 from "../../../shared/assets/svg/request.svg"
 
