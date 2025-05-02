@@ -1,5 +1,6 @@
 import Logo from "@/shared/ui/icons/Logo";
 import HeroButtons from "./HeroButtons";
+import anna from "../../../../public/images/anna.png";
 
 const HeroSection = () => {
   return (
@@ -24,8 +25,7 @@ const HeroSection = () => {
             className="slogan-font pb-10 text-[black] text-right
                         text-[20px]  sm:text-[24px] md:text-[28px] lg:text-[43px] xl:text-5xl
                         sm:leading-[1.2] md:leading-[1.15] lg:leading-[1]"
-            style={{ transform: "rotate(-0deg)" }}
-          >
+            style={{ transform: "rotate(-0deg)" }}>
             Помогу начать жить той жизнью, где вам хорошо – в гармонии с собой,
             своей работой, окружением и целями.
           </p>
@@ -34,15 +34,7 @@ const HeroSection = () => {
         {/* photo's block */}
         <div
           className="relative flex flex-col w-full bg-cover bg-no-repeat bg-right z-0"
-          style={{ backgroundImage: "url('../../../../public/images/anna.png')" }}
-        >
-
-          {/* logo for small screen
-          <Logo
-            className="mt-[8%] ml-[8%] block sm:hidden"
-            fillHeart="rgba(255, 255, 255, 0.8)"
-            fillText="#44453D"
-          /> */}
+          style={{ backgroundImage: `url(${anna})` }}>
 
           {/* vertical opacity blocks */}
           <div className="w-[32px] sm:w-[68px] md:w-[100px] h-full flex z-0">
@@ -53,16 +45,6 @@ const HeroSection = () => {
           </div>
 
         </div>
-
-        {/* bottom slogan for small screens */}
-        {/* <p
-          className="slogan-font text-center text-3xl px-8 pt-1 absolute bottom-[-84px] 
-                    block sm:hidden bg-[rgba(255,255,255,0.5)]"
-          style={{ lineHeight: 1 }}
-        >
-          Помогу начать жить той жизнью, где вам хорошо – в гармонии с собой,
-          своей работой, окружением и целями.
-        </p> */}
 
       </div>
       <HeroButtons />
