@@ -5,7 +5,10 @@ const GroupCard = ({ title, image, description, startDate, onJoin }) => {
 
             <img src={image} alt={title} className="w-full h-auto object-contain" />
 
-            <h3 className="text-2xl font-bold">{title}</h3>
+            <h3 className="text-2xl font-bold 
+                            md:pr-[50px] md:pl-[16px]">
+                {title}
+            </h3>
 
             <ul className="list-disc pl-5 text-lg space-y-1">
                 {description.map((line, idx) => (
@@ -21,7 +24,9 @@ const GroupCard = ({ title, image, description, startDate, onJoin }) => {
                 >
                     Присоединиться
                 </button>
-                <p className="text-[16px] font-bold color-secondary-dark">{startDate}</p>
+                <p className="text-[16px] text-right font-bold color-secondary-dark">
+                    {startDate}
+                </p>
             </div>
 
         </div>

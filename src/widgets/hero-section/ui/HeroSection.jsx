@@ -3,22 +3,27 @@ import HeroButtons from "./HeroButtons";
 
 const HeroSection = () => {
   return (
-    <section  id="hero" className="flex-base w-full bg-primary-light">
+    <section id="hero" className="flex-base w-full bg-primary-light">
       <div
-        className={`
-        relative flex max-w-[1280px] bg-primary-light w-full
-        min-h-[55vw] md:min-h-[450px] lg:min-h-[500px] xl:min-h-[550px]
-        pt-[47px] sm:pt-[52px] md:pt-[57px] lg:pt-[52px] px-[60px]
-        `}
+        className='hero-box relative bg-primary-light'
       >
         {/* logo and slogan block */}
-        <div className=" flex-col justify-center items-end hero-design-box border-3
-                      w-[50%] hidden md:flex z-90 pl-[5%] pr-[45px] pt-[10px]">
+        <div className="flex flex-col justify-center items-end hero-design-line border-3 z-90
+                      w-[280px] sm:w-[320px] md:w-[400px] lg:w-[600px] xl:w-[820px] 
+                      pt-[5px] sm:pt-[20px] md:pt-[28px] lg:pt-[32px] xl:pt-[20px]
+                      sm:pl-[20px] md:pl-[20px] lg:pl-[40px] xl:pl-[120px]
+                      sm:pr-[24px] md:pr-[32px] lg:pr-[56px] xl:pr-[56px] ">
 
-          <Logo className="mb-[10px]" widthHeart ={130} fillText="#7D7F72" fillHeart="white" />
+          <Logo
+            className="mb-[2px] sm:mb-[10px]
+                      w-[50px] sm:w-[70px] md:w-[60px] lg:w-[100px] xl:w-[130px]"
+            fillText="#7D7F72"
+            fillHeart="white" />
 
           <p
-            className="slogan-font text-xl md:text-3xl lg:text-5xl pb-10 text-[black] text-right"
+            className="slogan-font pb-10 text-[black] text-right
+                        text-[20px]  sm:text-[24px] md:text-[28px] lg:text-[43px] xl:text-5xl
+                        sm:leading-[1.2] md:leading-[1.15] lg:leading-[1]"
             style={{ transform: "rotate(-0deg)" }}
           >
             Помогу начать жить той жизнью, где вам хорошо – в гармонии с собой,
@@ -32,49 +37,32 @@ const HeroSection = () => {
           style={{ backgroundImage: "url('/images/anna.png')" }}
         >
 
-          {/* top diagonal accent */}
-          {/* <div
-          className="absolute right-0 z-20 w-screen h-[15px] sm:h-[30px] bg-gradient-secondary slide-in-left"
-          style={{
-            clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%)',
-            transform: 'translateX(-100%)',
-            animation: 'slide-in-left 0.6s ease-out forwards',
-          }}
-        /> */}
-
-          {/* logo for small screen */}
+          {/* logo for small screen
           <Logo
-            className="mt-[8%] ml-[8%] block md:hidden"
-            widthHeart="22%"
+            className="mt-[8%] ml-[8%] block sm:hidden"
             fillHeart="rgba(255, 255, 255, 0.8)"
             fillText="#44453D"
-          />
+          /> */}
 
           {/* vertical opacity blocks */}
-          <div className="flex w-[100px] h-[100%] hidden md:flex z-0">
-            <div className="flex-[22] hero-design-box"></div>
-            <div className="flex-[36] hero-design-box opacity-90"></div>
-            <div className="flex-[27] hero-design-box opacity-70"></div>
-            <div className="flex-[15] hero-design-box opacity-50"></div>
+          <div className="w-[32px] sm:w-[68px] md:w-[100px] h-full flex z-0">
+            <div className="flex-[30] hero-design-line"></div>
+            <div className="flex-[40] hero-design-line opacity-80"></div>
+            <div className="flex-[30] md:flex-[27] hero-design-line opacity-60"></div>
+            <div className="hidden md:flex md:flex-[15] hero-design-line opacity-50"></div>
           </div>
+
         </div>
 
-        {/* bottom diagonal accent */}
-        {/* <div
-        className="absolute bottom-[-6px] left-0 w-screen h-[30px] bg-[#7D7F72] slide-in-right"
-        style={{
-          clipPath: "polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%)",
-        }}
-      ></div> */}
-
         {/* bottom slogan for small screens */}
-        <p
-          className="slogan-font text-center text-3xl px-8 pt-1 absolute bottom-[-84px] block md:hidden bg-[rgba(255,255,255,0.5)]"
+        {/* <p
+          className="slogan-font text-center text-3xl px-8 pt-1 absolute bottom-[-84px] 
+                    block sm:hidden bg-[rgba(255,255,255,0.5)]"
           style={{ lineHeight: 1 }}
         >
           Помогу начать жить той жизнью, где вам хорошо – в гармонии с собой,
           своей работой, окружением и целями.
-        </p>
+        </p> */}
 
       </div>
       <HeroButtons />

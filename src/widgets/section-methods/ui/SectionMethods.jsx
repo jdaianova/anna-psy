@@ -8,7 +8,7 @@ const SectionMethods = () => {
         <h2 className="slogan-font text-7xl mb-[30px] mt-[-30px] ">
           Используемые методики:</h2>
 
-        <div className="flex flex-between items-stretch gap-4">
+        <div className="flex flex-between items-stretch gap-10">
           {methodsData.map((method, index) => (
             <MethodCard key={index} {...method} />
           ))}

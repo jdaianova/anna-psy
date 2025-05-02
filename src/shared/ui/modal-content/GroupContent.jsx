@@ -4,7 +4,7 @@ import PaymentButton from "../payment-button/ui/PaymentButton";
 import { openCalendly } from "../../lib/openCalendly";
 
 const groupTitles = {
-    groupAdhd: "по СДВГ",
+    groupAdhd: "для взрослых с СДВГ",
     groupParents: "для родителей детей с СДВГ",
 };
 
@@ -27,7 +27,7 @@ const GroupContent = ({ onClose, groupType }) => {
                         onClick={() => handleSelectGroup("groupAdhd")}
                         className="w-full text-xl bg-white hover:bg-gray-100 px-6 py-4 rounded-lg shadow-md transition"
                     >
-                        Интерактивная группа по СДВГ
+                        Группа для взрослых с СДВГ
                     </button>
 
                     <button

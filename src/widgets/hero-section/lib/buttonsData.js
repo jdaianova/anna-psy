@@ -7,7 +7,7 @@ export const buttonsData = [
         id: 'consultation',
         icon: leaf,
         label: "Индивидуальные консультации",
-        text: "онлайн/очно",
+        text: "онлайн",
         color: "light",
     },
     {
@@ -20,7 +20,7 @@ export const buttonsData = [
     {
         id: 'diagnostics',
         icon: leafPuzzle,
-        label: "Запись на диагностику",
+        label: "Диагностическое исследование",
         text: "перейти",
         color: "dark",
     },

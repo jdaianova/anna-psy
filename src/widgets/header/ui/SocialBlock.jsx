@@ -15,8 +15,7 @@ const SocialBlock = () => {
           <img
             src={link.icon}
             alt={link.alt}
-            height={22}
-            className="transition-all duration-300"
+            className="transition-all duration-300 h-[26px]"
           />
         </a>
       ))}

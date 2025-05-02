@@ -15,8 +15,9 @@ const HeroButtons = () => {
 
   return (
     <section className="section z-40 bg-white">
-      <div className="box-in-section !pb-[120px]">
-        <div className="cards-in-section">
+      <div className="box-in-section">
+      <div className="cards-in-section">
+
           {buttonsData.map((btn, index) => (
             <HeroButton
               key={index}

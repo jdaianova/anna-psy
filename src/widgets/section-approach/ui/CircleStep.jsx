@@ -64,7 +64,10 @@ export const CircleStep = ({
                     transition={{ duration: 0.6, ease: 'easeOut' }}
                     className="inline-block origin-top"
                 >
-                    <p className="text-xl text-center">{sideText}</p>
+                    <p className="text-xl  md:text-[16px]
+                                text-center md:leading-relaxed">
+                        {sideText}
+                    </p>
                 </motion.div>
             </div>
         </div>
