@@ -34,7 +34,7 @@ const HeroSection = () => {
         {/* photo's block */}
         <div
           className="relative flex flex-col w-full bg-cover bg-no-repeat bg-right z-0"
-          style={{ backgroundImage: "url('/images/anna.png')" }}
+          style={{ backgroundImage: "url('../../../../public/images/anna.png')" }}
         >
 
           {/* logo for small screen
