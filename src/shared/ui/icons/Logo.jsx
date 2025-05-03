@@ -1,16 +1,14 @@
 const Logo = ({
   className = "",
-  widthHeart = "100",
   fillText = "#7D7F72",
   fillHeart = "#7D7F72", // origin color = #7D7F72, darltext = #44453D
 }) => {
   return (
     <svg
       className={`${className}`}
-      style={{ 
-        width: widthHeart, 
-        height: "auto", 
-        filter: "drop-shadow(0px 4px 8px rgba(78, 53, 53, 0.1))", 
+      style={{
+        height: "auto",
+        filter: "drop-shadow(0px 4px 8px rgba(78, 53, 53, 0.1))",
         transform: "rotate(0deg)",
       }}
       viewBox="0 0 63 61"

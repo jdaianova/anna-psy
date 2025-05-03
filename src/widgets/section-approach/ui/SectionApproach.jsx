@@ -40,13 +40,11 @@ const SectionApproach = () => {
       ref={sectionRef}
       className="section bg-primary-light"
     >
-      <div className="box-in-section">
+      <div className="box-in-section gap-4">
 
-        <h2 className="title-in-section">
-          Как я работаю
-        </h2>
+        <h2 className="title-in-section"> Как я работаю </h2>
 
-        <div className="cards-in-section !gap-0">
+        <div className="cards-in-section gap-8 sPhone:gap-4 ">
           {approachSteps.map((step, index) => (
 
             <CircleStep

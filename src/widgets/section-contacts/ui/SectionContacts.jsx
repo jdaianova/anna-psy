@@ -5,9 +5,9 @@ const SectionContacts = () => {
     return (
         <section className="section bg-white">
 
-            <div className="box-in-section !pb-[100px]">
+            <div className="box-in-section">
 
-                <h2 className="title-in-section">Как со мной связаться</h2>
+                <h2 className="title-in-section">Где меня найти</h2>
 
                 <ul className="cards-in-section">
                     {contactItems.map((item, index) => (

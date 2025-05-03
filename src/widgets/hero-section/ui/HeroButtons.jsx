@@ -15,24 +15,28 @@ const HeroButtons = () => {
 
   return (
     <section className="section z-40 bg-white">
-      <div className="box-in-section !pb-[120px]">
-        <div className="cards-in-section">
-          {buttonsData.map((btn, index) => (
-            <HeroButton
-              key={index}
-              label={btn.label}
-              text={btn.text}
-              color={btn.color}
-              icon={btn.icon}
-              onClick={() => handleButtonClick(btn.id)}
-              delay={200 + index * 500}
-            />
-          ))}
-        </div>
+
+      <div className="flex flex-wrap sPhone:flex-nowrap w-[80%] max-w-[1200px]
+                      justify-between items-stretch
+                      gap-[2.5%] mt-[-16px] xl:px-[100px]
+                      pb-[60px] md:pb-[60px] lg:pb-[100px]">
+
+        {buttonsData.map((btn, index) =>
+          <HeroButton
+            label={btn.label}
+            text={btn.text}
+            color={btn.color}
+            icon={btn.icon}
+            onClick={() => handleButtonClick(btn.id)}
+            delay={200 + index * 500}
+            isThird={index === 2}
+          />
+        )}
+
       </div>
 
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <ModalContent contentType={contentType} onClose={() => setIsOpen(false)}/>
+        <ModalContent contentType={contentType} onClose={() => setIsOpen(false)} />
       </Modal>
     </section>
   );
