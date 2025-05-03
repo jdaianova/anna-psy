@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        sPhone: '400px',
+        sPhone: '420px',
         mPhone: '500px',
         sm: '640px',  
         md: '768px',
