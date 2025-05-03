@@ -4,8 +4,10 @@ import SectionApproach from '@/widgets/section-approach/ui/SectionApproach';
 import SectionMethods from '@/widgets/section-methods/ui/SectionMethods';
 import SectionGroups from '@/widgets/section-groups/ui/SectionGroups';
 import SectionContacts from '@/widgets/section-contacts/ui/SectionContacts.jsx';
+import HeroButtons from '../../hero-section/ui/HeroButtons';
 
 export const sectionsData = [
+  { id: 'heroBtn', component: HeroButtons },
   { id: 'about', component: SectionAbout },
   { id: 'help', component: SectionHelp },
   { id: 'approach', component: SectionApproach },

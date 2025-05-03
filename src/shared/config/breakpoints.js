@@ -1,15 +1,15 @@
 export const breakpoints = {
     width: {
-        sPhone: "@media (max-width: 329px)",   // по 330px
-        mPhone: "@media (max-width: 449px)",   // по 450px
-        base: "@media (max-width: 639px)",   // до sm (Tailwind base)
-        sm: "@media (max-width: 767px)",     // Tailwind sm: ≥640
-        md: "@media (max-width: 1023px)",    // Tailwind md: ≥768
-        lg: "@media (max-width: 1279px)",    // Tailwind lg: ≥1024
-        xl: "@media (max-width: 1535px)",    // Tailwind xl: ≥1280
+      xsPhone: "@media (min-width: 0px)",       // base
+      sPhone: "@media (min-width: 400px)",      // от 400px
+      mPhone: "@media (min-width: 500px)",      // от 500px
+      sm: "@media (min-width: 640px)",          // Tailwind sm: от 640px
+      md: "@media (min-width: 768px)",          // Tailwind md: от 768px
+      lg: "@media (min-width: 1024px)",         // Tailwind lg: от 1024px
+      xl: "@media (min-width: 1280px)",         // Tailwind xl: от 1280px
     },
     combined: {
-        mdLowHeight: "@media (max-width: 1023px) and (max-height: 700px)",  // md
-        lgLowHeight: "@media (max-width: 1279px) and (max-height: 700px)",  // lg
+      mdLowHeight: "@media (min-width: 1024px) and (max-height: 650px)", // md и низкая высота
     },
-};
+  };
+  

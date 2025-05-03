@@ -13,25 +13,25 @@ const NavMenu = () => {
         <nav className="relative">
             {/* Кнопка-бургер для маленьких экранов */}
             <button
-                className="block lg:hidden text-white text-3xl"
+                className="block lg:hidden"
                 onClick={toggleMenu}
             >
                 <img
                     src={burger}
                     alt="menu"
-                    className="h-[20px] inline-block transition-transform duration-300 hover:scale-105"
+                    className="h-[20px] transition-transform duration-300 hover:scale-125"
                 />
             </button>
 
             {/* Шторка для маленьких экранов */}
-            <ul className={`fixed top-0 left-0 h-full w-[80%] md:w-[50%] pt-[70px]
-                            bg-gradient-secondary flex flex-col items-end gap-8 px-[50px]
+            <ul className={`fixed top-0 left-0 h-full p-8 bg-gradient-secondary 
+                            flex flex-col items-end gap-4
                             transform ${isOpen ? 'translate-x-0' : '-translate-x-full'}
                             transition-transform duration-500 ease-in-out z-50 lg:hidden`}>
 
                 <button
                     onClick={toggleMenu}
-                    className="absolute bottom-10 right-[50px] text-white text-5xl"
+                    className="absolute bottom-10 right-[40px] text-white text-5xl nav-link-font"
                 >
                     ×
                 </button>
@@ -40,7 +40,7 @@ const NavMenu = () => {
                     <li key={href}>
                         <a
                             href={href}
-                            className="nav-link-font text-[18px] md:text-[22px] xl:text-[16px]"
+                            className="nav-link-font text-[4vw] mPhone:text-[3.6vw]"
                         >
                             {label}
                         </a>
@@ -54,7 +54,9 @@ const NavMenu = () => {
                     <li key={href}>
                         <a
                             href={href}
-                            className="nav-link-font text-[16px]"
+                            className="nav-link-font 
+                                    text-[5vw] sPhone:text-[4vw] mPhone:text-[3.6vw] 
+                                    sm:!text-[3.2vw] md:!text-[2.8vw] lg:!text-[16px]"
                         >
                             {label}
                         </a>

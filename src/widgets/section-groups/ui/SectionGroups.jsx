@@ -19,10 +19,10 @@ const SectionGroups = () => {
 
   return (
     <section className="section bg-primary-light">
-      <div className="box-in-section">
+      <div className="box-in-section gap-8">
         <h2 className="title-in-section">Группы</h2>
 
-        <div className="cards-in-section">
+        <div className="cards-in-section gap-8 lg:!flex-col">
           {groupsData.map((group) => (
             <GroupCard
               key={group.id}

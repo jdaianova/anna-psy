@@ -21,7 +21,7 @@ export const buttonsData = [
         id: 'diagnostics',
         icon: leafPuzzle,
         label: "Диагностическое исследование",
-        text: "перейти",
+        text: "онлайн",
         color: "dark",
     },
 ];

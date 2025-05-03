@@ -37,9 +37,11 @@ export const CircleStep = ({
 
     return (
         <div
-            className={`flex-1 flex flex-col items-center gap-6 px-10 
-                ${index === 1 ? 'border-l-2 border-r-2 border-white' : ''
-                }`}
+            className={`flex-1 flex flex-col items-center gap-4 pt-10 sm:w-[31%]
+                p-4 mPhone:p-8 
+                ${(index === 1 ) || (index === 2)
+                    ? 'border-t-2 border-white sm:border-l-2 sm:border-t-0' 
+                    : ''}`}
         >
             <div className="w-[140px]">
                 <CircularProgressbarWithChildren
@@ -64,8 +66,10 @@ export const CircleStep = ({
                     transition={{ duration: 0.6, ease: 'easeOut' }}
                     className="inline-block origin-top"
                 >
-                    <p className="text-xl  md:text-[16px]
-                                text-center md:leading-relaxed">
+                    <p className="text-center
+                            px-0 sPhone:px-8
+                            text-[5vw] sPhone:text-[4vw] mPhone:text-[3.6vw] 
+                            sm:!text-[3.2vw] md:!text-[2.6vw] lg:!text-[2vw] xl:!text-[24px]">
                         {sideText}
                     </p>
                 </motion.div>

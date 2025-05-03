@@ -3,12 +3,12 @@ import SocialBlock from './SocialBlock';
 
 const Header = () => {
   return (
-    <header className="fixed top-0 w-full bg-gradient-secondary shadow-sm z-50 flex justify-center">
-      <div className="flex justify-between items-center
-                      h-[50px] px-[30px] sm:px-[40px] md:px-[60px] lg:px-[80px]
-                      w-full xl:w-[1280px]">
+    <header className="fixed top-0 flex justify-center w-full
+                       bg-gradient-secondary shadow-sm z-50">
+
+      <div className="flex w-[80%] max-w-[1200px] justify-between items-center h-[50px]">
         <NavMenu />
-        <SocialBlock/>
+        <SocialBlock />
       </div>
     </header>
   );
