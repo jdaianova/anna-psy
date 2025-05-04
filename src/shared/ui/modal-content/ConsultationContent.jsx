@@ -10,12 +10,13 @@ const ConsultationContent = ({ onClose }) => {
         <div className="flex flex-col gap-4">
             <h3 className="text-2xl text-center font-bold mb-6">Забронировать индивидуальную консультацию</h3>
 
-            <div className="flex gap-4">
-                {Object.entries(links).map(([type, url]) => (
+            <div className={`flex flex-wrap gap-4 justify-center`}>
+                {Object.entries(links).map(([type, url], index, arr) => (
                     <PaymentButton
                         key={type}
                         type={type}
                         onClick={() => openCalendly(url, onClose)}
+                        fullWidth={arr.length === 1} // передаём флаг
                     />
                 ))}
             </div>

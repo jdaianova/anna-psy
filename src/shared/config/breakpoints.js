@@ -1,7 +1,7 @@
 export const breakpoints = {
     width: {
       xsPhone: "@media (min-width: 0px)",       // base
-      sPhone: "@media (min-width: 400px)",      // от 400px
+      sPhone: "@media (min-width: 431px)",      // от 431px
       mPhone: "@media (min-width: 500px)",      // от 500px
       sm: "@media (min-width: 640px)",          // Tailwind sm: от 640px
       md: "@media (min-width: 768px)",          // Tailwind md: от 768px

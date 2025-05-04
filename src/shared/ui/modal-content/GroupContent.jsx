@@ -20,7 +20,9 @@ const GroupContent = ({ onClose, groupType }) => {
     if (!activeGroup) {
         return (
             <div className="flex flex-col gap-4">
-                <h3 className="text-2xl text-center font-bold mb-6">Выберите группу, в которую вы хотите попасть</h3>
+                <h3 className="text-2xl text-center font-bold mb-6">
+                    Выберите группу, в которую вы хотите попасть
+                </h3>
 
                 <div className="flex flex-col gap-4">
                     <button
@@ -48,14 +50,17 @@ const GroupContent = ({ onClose, groupType }) => {
             <h3 className="text-3xl text-center font-bold">
                 Забронировать место в группе
             </h3>
-            <h4 className="text-2xl text-center font-bold mb-6 mt-[-10px] text-primary">{groupTitles[activeGroup]}</h4>
+            <h4 className="text-2xl text-center font-bold mb-6 mt-[-10px] text-primary">
+                {groupTitles[activeGroup]}
+            </h4>
 
-            <div className="flex gap-4">
-                {Object.entries(links).map(([type, url]) => (
+            <div className="flex flex-wrap gap-4 justify-center">
+                {Object.entries(links).map(([type, url], _, arr) => (
                     <PaymentButton
                         key={type}
                         type={type}
                         onClick={() => openCalendly(url, onClose)}
+                        fullWidth={arr.length === 1}
                     />
                 ))}
             </div>

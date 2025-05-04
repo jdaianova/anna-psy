@@ -96,8 +96,37 @@ export default {
     [breakpoints.combined.mdLowHeight]: {
       height: "400px", // от 1024px и при низкой высоте
     },
+  },
 
-  }
+  ".adaptive-text": {
+    fontSize: "5vw",
+
+    [breakpoints.width.sPhone]: {
+      fontSize: "4vw",
+    },
+
+    [breakpoints.width.mPhone]: {
+      fontSize: "3.6vw",
+    },
+
+    [breakpoints.width.sm]: {
+      fontSize: "3.2vw !important",
+    },
+
+    [breakpoints.width.md]: {
+      fontSize: "2.8vw !important",
+    },
+
+    [breakpoints.width.lg]: {
+      fontSize: "2vw !important",
+    },
+
+    [breakpoints.width.xl]: {
+      fontSize: "24px !important",
+    },
+  },
+
+
 }
 
 // };
