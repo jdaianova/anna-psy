@@ -3,7 +3,7 @@ import paypal from "../../../assets/svg/paypal.svg";
 import clock from "../../../assets/svg/clock.svg";
 
 
-const PaymentButton = ({ type, onClick }) => {
+const PaymentButton = ({ type, onClick, fullWidth = false }) => {
     const getTextByType = (type) => {
         switch (type) {
             case "stripe":
@@ -32,9 +32,10 @@ const PaymentButton = ({ type, onClick }) => {
 
     return (
         <button
-            className="w-full flex flex-col items-start gap-2 
-            bg-white hover:bg-primary-light px-8 py-6 rounded-lg 
-            shadow-md text-left transition"
+            className={`flex flex-col items-start gap-2 
+                        bg-white hover:bg-primary-light px-8 py-6 rounded-lg 
+                        shadow-md text-left transition
+                        ${fullWidth ? 'w-full' : 'w-[280px] max-w-full'}`}
             onClick={onClick}
         >
             <img src={getIconByType(type)} alt={type} className="h-[50px]" />
@@ -42,5 +43,6 @@ const PaymentButton = ({ type, onClick }) => {
         </button>
     );
 };
+
 
 export default PaymentButton;

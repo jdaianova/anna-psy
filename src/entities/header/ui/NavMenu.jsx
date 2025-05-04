@@ -40,6 +40,14 @@ const NavMenu = () => {
                     <li key={href}>
                         <a
                             href={href}
+                            onClick={(e) => {
+                                e.preventDefault(); // отменяем стандартный переход
+                                const section = document.querySelector(href);
+                                if (section) {
+                                    section.scrollIntoView({ behavior: 'smooth' }); // плавный скролл
+                                }
+                                setIsOpen(false); // закрыть меню
+                            }}
                             className="nav-link-font text-[4vw] mPhone:text-[3.6vw]"
                         >
                             {label}
