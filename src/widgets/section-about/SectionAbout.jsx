@@ -1,6 +1,6 @@
 const SectionAbout = () => {
   return (
-    <section className="section bg-primary-light">
+    <section className="section bg-secondary-light">
 
       <div className="box-in-section">
 

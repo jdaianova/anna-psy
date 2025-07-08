@@ -22,7 +22,7 @@ const SectionContacts = () => {
 
                             {/* Описание */}
                             {item.description && (
-                                <p className="adaptive-text text-black text-left">
+                                <p className="adaptive-text text-left">
                                     {item.description}
                                 </p>
                             )}

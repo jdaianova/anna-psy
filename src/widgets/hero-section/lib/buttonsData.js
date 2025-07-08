@@ -1,6 +1,6 @@
 import leaf from '../../../shared/assets/svg/leaf.svg';
 import leaves from '../../../shared/assets/svg/leaves.svg';
-import leafPuzzle from '../../../shared/assets/svg/leaf-puzzle.svg';
+import leafPuzzle from '../../../shared/assets/svg/leaf-puzzle1.svg';
 
 export const buttonsData = [
     {

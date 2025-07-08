@@ -11,8 +11,7 @@ const MethodCard = ({ image, title, text }) => {
           {title}
         </h3>
 
-        <p className="text-gray-700 
-                      text-[5vw] sPhone:text-[4vw] mPhone:text-[3.6vw] 
+        <p className="text-[5vw] sPhone:text-[4vw] mPhone:text-[3.6vw]
                       sm:!text-[3.2vw] md:!text-[2.6vw] lg:!text-[2vw] xl:!text-[24px]">
           {text}
         </p>

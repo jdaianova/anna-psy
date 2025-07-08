@@ -8,7 +8,7 @@ export const sectionHelpData = [
         pic: picCardHelp1,
     },
     {
-        text: " Вырастить личные границы и выйти из разрушающих паттернов",
+        text: "Вырастить личные границы и выйти из разрушающих паттернов",
         pic: picCardHelp2,
     },
     {

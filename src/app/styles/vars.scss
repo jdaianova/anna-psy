@@ -1,21 +1,133 @@
-@use "./fonts.scss";
+ @use "./fonts.scss";
 
+ // variant-8
 :root {
-  /*fonts*/
+  /* fonts */
   --font-primary: "Nunito", sans-serif;
   --font-primary-bold: "Nunito", sans-serif;
   --font-accent: "Corinthia", "Brush Script MT", cursive;
 
-  /*colors*/
-  --color-primary: #7d7f72;
-  --color-primary-light: #f2f3f1;
-  --color-primary-dark: #44453D;
+  /* colors */
+  --color-primary: #6A8CA2;         
+  --color-primary-light: #E4EEF2;   
+  --color-primary-dark: #4F6B7A;   
 
-  --color-secondary: #825b5c;
-  --color-secondary-light: #a37d7e;
-  --color-secondary-dark: #412724;
+  --color-secondary: #6A5852    ;       
+  --color-secondary-light: #E4EEF2; 
+  --color-secondary-dark: #604E4A    ;   
 
-  --color-text-dark: #4E3535;
-
-
+  --color-text-dark: #3E2720 ;
 }
+
+//------------------------------------------------------------------------------
+
+// :root {
+//   /* fonts */
+//   --font-primary: "Nunito", sans-serif;
+//   --font-primary-bold: "Nunito", sans-serif;
+//   --font-accent: "Corinthia", "Brush Script MT", cursive;
+
+//   /* colors */
+//   --color-primary: #6A8CA2;           /* Dusty Blue */
+//   --color-primary-light: #A8BFC9;     /* Powder Steel */
+//   --color-primary-dark: #4F6B7A;      /* Slate Blue-Gray */
+
+//   --color-secondary: #D6BFAE;         /* Dusty Rose Beige */
+//   --color-secondary-light: #F3EFEA;   /* Warm Light Beige */
+//   --color-secondary-dark: #8C7260;   
+
+//   --color-text-dark: #22313F;
+// }
+
+// :root {
+//   /* fonts */
+//   --font-primary: "Nunito", sans-serif;
+//   --font-primary-bold: "Nunito", sans-serif;
+//   --font-accent: "Corinthia", "Brush Script MT", cursive;
+
+//   /* colors */
+//   --color-primary: #6A8CA2;       
+//   --color-primary-light: #E9DDD4   ;   
+//   --color-primary-dark: #4F6B7A;    
+
+//   --color-secondary: #6A8CA2;       
+//   --color-secondary-light: #FAF9F7   ; 
+//   --color-secondary-dark: #4F6B7A;   
+
+//   --color-text-dark: #22313F;
+// }
+
+// :root {
+//   /* fonts */
+//   --font-primary: "Nunito", sans-serif;
+//   --font-primary-bold: "Nunito", sans-serif;
+//   --font-accent: "Corinthia", "Brush Script MT", cursive;
+
+//   /* colors */
+//   --color-primary: #6A8CA2;           /* Dusty Blue */
+//   --color-primary-light: #A8BFC9;     /* Powder Steel */
+//   --color-primary-dark: #4F6B7A;      /* Slate Blue-Gray */
+
+//   --color-secondary: #57778E ;       
+//   --color-secondary-light: #EEF5F8; 
+//   --color-secondary-dark: #3A4E59 ;   
+
+//   --color-text-dark: #22313F;
+// }
+
+
+// :root {
+//   /* fonts */
+//   --font-primary: "Nunito", sans-serif;
+//   --font-primary-bold: "Nunito", sans-serif;
+//   --font-accent: "Corinthia", "Brush Script MT", cursive;
+
+//   /* colors */
+//   --color-primary: #6A8CA2;         
+//   --color-primary-light: #A8BFC9;   
+//   --color-primary-dark: #4F6B7A;   
+
+//   --color-secondary: #3A4E59  ;       
+//   --color-secondary-light: #EEF5F8; 
+//   --color-secondary-dark: #3A4E59  ;   
+
+//   --color-text-dark: #3A4E59;
+// }
+
+// :root {
+//   /* fonts */
+//   --font-primary: "Nunito", sans-serif;
+//   --font-primary-bold: "Nunito", sans-serif;
+//   --font-accent: "Corinthia", "Brush Script MT", cursive;
+
+//   /* colors */
+//   --color-primary: #6A8CA2;         
+//   --color-primary-light: #E4EEF2;   
+//   --color-primary-dark: #4F6B7A;   
+
+//   --color-secondary: #6A5852    ;       
+//   --color-secondary-light: #E4EEF2; 
+//   --color-secondary-dark: #574643    ;   
+
+//   --color-text-dark: #3E2720 ;
+// }
+
+
+// :root {
+//   /*fonts*/
+//   --font-primary: "Nunito", sans-serif;
+//   --font-primary-bold: "Nunito", sans-serif;
+//   --font-accent: "Corinthia", "Brush Script MT", cursive;
+
+//   /*colors*/
+//   --color-primary: #7d7f72;
+//   --color-primary-light: #f2f3f1;
+//   --color-primary-dark: #44453D;
+
+//   --color-secondary: #825b5c;
+//   --color-secondary-light: #d3aaac;
+//   --color-secondary-dark: #5E4042;
+
+//   --color-text-dark: #4E3535;
+
+// }
