@@ -19,7 +19,7 @@ const SectionHelpCard = ({ pic, text }) => {
         ${animated ? 'swing' : ''} swing-hover`}
       style={{ backgroundImage: `url(${pic})` }}
     >
-      <p className="text-center z-10 text-black 
+      <p className="text-center z-10
               text-[5vw] sPhone:text-[4vw] mPhone:text-[3.6vw] 
               sm:!text-[3.2vw] md:!text-[2.8vw] lg:!text-[2vw] xl:!text-[24px]">
         {text}

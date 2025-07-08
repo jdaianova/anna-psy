@@ -24,7 +24,7 @@ const NavMenu = () => {
             </button>
 
             {/* Шторка для маленьких экранов */}
-            <ul className={`fixed top-0 left-0 h-full p-8 bg-gradient-secondary 
+            <ul className={`fixed top-0 left-0 h-full p-8 bg-secondary-dark
                             flex flex-col items-end gap-4
                             transform ${isOpen ? 'translate-x-0' : '-translate-x-full'}
                             transition-transform duration-500 ease-in-out z-50 lg:hidden`}>

@@ -1,26 +1,50 @@
 export default {
-  ".bg-primary-light": {
-    backgroundColor: "var(--color-primary-light)",
+
+  //primary colors
+  ".primary": {
+    color: "var(--color-primary)",
+  },
+
+  ".primary-dark": {
+    color: "var(--color-primary-dark)",
   },
 
   ".bg-primary": {
     backgroundColor: "var(--color-primary)",
   },
 
-  ".bg-gradient-secondary": {
-    backgroundImage:
-      "linear-gradient(90deg, var(--color-secondary-light) 0%, var(--color-secondary) 100%)",
+  ".bg-primary-light": {
+    backgroundColor: "var(--color-primary-light)",
   },
 
-  ".color-secondary-dark": {
+  ".bg-primary-dark": {
+    backgroundColor: "var(--color-primary-dark)",
+  },
+
+  //secondary colors
+  ".secondary-dark": {
     color: "var(--color-secondary-dark)",
+  },
+
+  ".bg-secondary": {
+    backgroundColor: "var(--color-secondary)",
+  },
+
+    ".bg-secondary-dark": {
+    backgroundColor: "var(--color-secondary-dark)",
+  },
+
+  ".bg-secondary-light": {
+    backgroundColor: "var(--color-secondary-light)",
+  },
+
+  //text colors
+  ".text-primary": {
+    color: "var(--color-primary)"
   },
 
   ".text-dark": {
     color: "var(--color-text-dark)"
   },
 
-  ".text-primary": {
-    color: "var(--color-primary)"
-  }
 };

@@ -5,8 +5,8 @@ const HeroButton = ({ icon, label, text, color = 'light', onClick, delay = 0, is
   const [hasAnimated, setHasAnimated] = useState(false);
 
   const isLight = color === 'light';
-  const bgColor = isLight ? 'bg-white' : 'bg-primary';
-  const textColor = isLight ? 'text-black' : 'text-white';
+  const bgColor = isLight ? 'bg-white' : 'bg-secondary-dark';
+  const textColor = isLight ? 'text-dark' : 'text-white';
 
   return (
     <button
@@ -48,6 +48,3 @@ const HeroButton = ({ icon, label, text, color = 'light', onClick, delay = 0, is
 };
 
 export default HeroButton;
-
-//     ${isThird ? 'max-[500px]:flex-none' : ''}
-// ${isThird ? 'flex-col max-[500px]:flex-row' : 'flex-col'}

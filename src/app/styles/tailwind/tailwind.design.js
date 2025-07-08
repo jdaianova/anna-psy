@@ -67,7 +67,7 @@ export default {
 
   ".hero-design-line": {
     backgroundColor: "var(--color-primary-light)",
-    borderRight: "2px solid var(--color-secondary-dark)",
+    borderRight: "2px solid var(--color-primary)",
   },
 
   ".hero-box-h": {
@@ -90,7 +90,7 @@ export default {
     },
 
     [breakpoints.width.lg]: {
-      height: "500px", // от 1024px
+      height: "580px", // от 1024px
     },
 
     [breakpoints.combined.mdLowHeight]: {

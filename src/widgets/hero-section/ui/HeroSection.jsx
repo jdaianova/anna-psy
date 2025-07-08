@@ -1,5 +1,5 @@
 import Logo from "@/shared/ui/icons/Logo";
-import anna from "../../../../public/images/anna.png";
+import anna from "../../../../public/images/anna_new8.png";
 
 const HeroSection = () => {
   return (
@@ -14,11 +14,11 @@ const HeroSection = () => {
           <Logo
             className="mb-[10px] md:mb-[20px] 
                        w-[50px] mPhone:w-[60px] sm:!w-[80px] lg:!w-[100px] xl:!w-[130px]"
-            fillText="#7D7F72"
+            fillText="#604E4A"
             fillHeart="white" />
 
           <p
-            className="slogan-font text-[black] text-right hidden sm:block
+            className="slogan-font text-right hidden sm:block
                         text-[24px] md:text-[28px] lg:text-[43px] xl:text-5xl
                         leading-[1.1] md:leading-[1.15] lg:leading-[1]">
             Помогу начать жить той жизнью, где вам хорошо – в гармонии с собой,
