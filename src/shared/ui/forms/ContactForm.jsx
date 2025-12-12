@@ -3,32 +3,9 @@ import Input from "@/shared/ui/Input";
 import Textarea from "@/shared/ui/Textarea";
 import Button from "@/shared/ui/Button";
 
-const ContactForm = ({ action, presetMessage }) => {
+const ContactForm = ({ presetMessage }) => {
   const [sent, setSent] = useState(false);
-  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    const formData = new FormData(e.target);
-
-    try {
-      const res = await fetch(action, {
-        method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
-      });
-
-      if (res.ok) {
-        setSent(true);
-      }
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  // ✅ Экран успеха — БЕЗ кнопок
   if (sent) {
     return (
       <div className="flex flex-col gap-3 text-center">
@@ -44,9 +21,15 @@ const ContactForm = ({ action, presetMessage }) => {
 
   return (
     <form
-      onSubmit={handleSubmit}
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      onSubmit={() => setSent(true)}
       className="flex flex-col gap-4"
     >
+      {/* ОБЯЗАТЕЛЬНО для Netlify */}
+      <input type="hidden" name="form-name" value="contact" />
+
       <Input
         label="Имя"
         name="name"
@@ -70,9 +53,8 @@ const ContactForm = ({ action, presetMessage }) => {
         type="submit"
         variant="secondary"
         className="self-center"
-        disabled={loading}
       >
-        {loading ? "Отправка..." : "Отправить"}
+        Отправить
       </Button>
     </form>
   );
