@@ -1,5 +1,5 @@
-import group1 from "../../../shared/assets/img/group1.png";
-import group2 from "../../../shared/assets/img/group2.png";
+import group1 from "../../../shared/assets/img/group1.webp";
+import group2 from "../../../shared/assets/img/group2.webp";
 
 export const groupsData = [
   {

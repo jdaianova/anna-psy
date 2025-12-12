@@ -2,8 +2,8 @@ import instaColor from '../../../shared/assets/svg/instaColor.svg';
 import telegramColor from '../../../shared/assets/svg/telegramColor.svg';
 import youtubeColor from '../../../shared/assets/svg/youtubeColor.svg';
 
-import imgInsta from '../../../shared/assets/img/imgInsta.png';
-import imgYoutube from '../../../shared/assets/img/imgYoutube.png';
+import imgInsta from '../../../shared/assets/img/imgInsta.webp';
+import imgYoutube from '../../../shared/assets/img/imgYoutube.webp';
 
 export const contactItems = [
   {

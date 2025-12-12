@@ -16,6 +16,8 @@ const GroupCard = ({ title, image, description, startDate, onJoin }) => {
         <img
           src={image}
           alt={title}
+          loading="lazy"
+          decoding="async"
           className="w-full lg:w-[50%] xl:w-[40%] h-auto object-contain"
         />
 
@@ -32,21 +34,6 @@ const GroupCard = ({ title, image, description, startDate, onJoin }) => {
         </div>
       </div>
 
-      {/* <div className="flex items-end justify-between pt-2 gap-2 w-full ">
-            <p className="text-[3vw] xl:!text-[24px] text-right font-bold color-secondary-dark">
-                    {startDate}
-                </p>
-                <button
-                    className="px-6 py-2 rounded-md bg-primary text-white
-                                text-[4vw] sPhone:text-[3.4vw] mPhone:text-[3vw] 
-                                sm:!text-[2.8vw] md:!text-[2.4vw] lg:!text-[2.2vw] xl:!text-[24px]
-                                hover:bg-secondary transition-colors duration-300"
-                    onClick={onJoin}
-                >
-                    Присоединиться
-                </button>
-
-            </div> */}
       <button
         className="px-6 py-2 rounded-md bg-primary text-white
                                 text-[4vw] sPhone:text-[3.4vw] mPhone:text-[3vw] 

@@ -1,7 +1,7 @@
-import method1 from '../../../shared/assets/img/picEDMR.png';
-import method2 from '../../../shared/assets/img/picGIPNO.png';
-import method3 from '../../../shared/assets/img/picDBT.png';
-import method4 from '../../../shared/assets/img/picKPT.png';
+import method1 from '../../../shared/assets/img/picEDMR.webp';
+import method2 from '../../../shared/assets/img/picGIPNO.webp';
+import method3 from '../../../shared/assets/img/picDBT.webp';
+import method4 from '../../../shared/assets/img/picKPT.webp';
 
 export const methodsData = [
     {

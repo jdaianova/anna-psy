@@ -1,6 +1,6 @@
-import picCardHelp1 from '../../../shared/assets/img/picCardHelp1.png'
-import picCardHelp2 from '../../../shared/assets/img/picCardHelp2.png'
-import picCardHelp3 from '../../../shared/assets/img/picCardHelp3.png'
+import picCardHelp1 from '../../../shared/assets/img/picCardHelp1.webp'
+import picCardHelp2 from '../../../shared/assets/img/picCardHelp2.webp'
+import picCardHelp3 from '../../../shared/assets/img/picCardHelp3.webp'
 
 export const sectionHelpData = [
     {
