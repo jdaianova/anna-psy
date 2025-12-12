@@ -1,5 +1,5 @@
 import Logo from "@/shared/ui/icons/Logo";
-import anna from "../../../../public/images/anna_new8.png";
+import anna from "../../../../public/images/anna.webp";
 
 const HeroSection = () => {
   return (
@@ -22,12 +22,12 @@ const HeroSection = () => {
                         text-[24px] md:text-[28px] lg:text-[43px] xl:text-5xl
                         leading-[1.1] md:leading-[1.15] lg:leading-[1]">
             Помогу начать жить той жизнью, где вам хорошо – в гармонии с собой,
-            своей работой, окружением и целями.
+            своей работой, окружением и целями
           </p>
 
           <p className="slogan-font text-right sm:hidden leading-[0.8]
                         text-[8vw] ">
-            Помогу найти себя.
+            Помогу найти себя
           </p>
 
         </div>
