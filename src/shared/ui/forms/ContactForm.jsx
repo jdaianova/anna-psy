@@ -1,7 +1,13 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
 import Input from "@/shared/ui/Input";
 import Textarea from "@/shared/ui/Textarea";
 import Button from "@/shared/ui/Button";
+
+const SERVICE_ID = "service_m25axmd";
+const TEMPLATE_ID = "template_0ohzq0l";
+const PUBLIC_KEY = "g0UY3Hxyf7-XBNuvh";
 
 const ContactForm = ({ presetMessage }) => {
   const [sent, setSent] = useState(false);
@@ -11,21 +17,18 @@ const ContactForm = ({ presetMessage }) => {
     e.preventDefault();
     setLoading(true);
 
-    const form = e.target;
-    const data = new FormData(form);
-
     try {
-      await fetch("/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams(data).toString(),
-      });
+      await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        e.target,
+        PUBLIC_KEY
+      );
 
       setSent(true);
-    } catch (e) {
-      console.error("Netlify form error", e);
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      alert("Ошибка отправки письма");
     } finally {
       setLoading(false);
     }
@@ -44,15 +47,9 @@ const ContactForm = ({ presetMessage }) => {
 
   return (
     <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
       onSubmit={handleSubmit}
       className="flex flex-col gap-4"
     >
-      {/* ОБЯЗАТЕЛЬНО */}
-      <input type="hidden" name="form-name" value="contact" />
-
       <Input label="Имя" name="name" required />
       <Input label="Email" name="email" type="email" required />
       <Textarea
