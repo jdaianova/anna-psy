@@ -37,7 +37,7 @@ const SectionHelp = () => {
           </button>
 
           <button
-            onClick={() => handleOpenModal("consultation")}
+            onClick={() => handleOpenModal("diagnostics")}
             className={btnStyle}>
             Записаться на диагностику
           </button>
