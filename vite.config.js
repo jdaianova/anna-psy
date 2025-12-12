@@ -1,13 +1,16 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
 export default defineConfig({
-  base: process.env.DEPLOY_TARGET === 'gh-pages' ? '/anna-psy/' : '/',
+  base: process.env.DEPLOY_TARGET === "gh-pages" ? "/anna-psy/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      "@": path.resolve(__dirname, "src"),
     },
+  },
+  build: {
+    cssCodeSplit: true,
   },
 });
