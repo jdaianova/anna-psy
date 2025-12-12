@@ -23,6 +23,7 @@ const HeroButtons = () => {
       >
         {buttonsData.map((btn, index) => (
           <HeroButton
+            key={btn.id}
             label={btn.label}
             text={btn.text}
             color={btn.color}
