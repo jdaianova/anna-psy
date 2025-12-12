@@ -9,7 +9,7 @@ export const contactItems = [
   {
     id: 'youtube',
     title: 'YouTube',
-    description: 'На канале я делюсь видео о психологии, нейроотличиях и СДВГ.',
+    description: 'На канале я делюсь видео о психологии, нейроотличиях и СДВГ',
     link: 'https://www.youtube.com/@life-incolors',
     button: 'Перейти на канал',
     icon: youtubeColor,
@@ -18,7 +18,7 @@ export const contactItems = [
   {
     id: 'instagram',
     title: 'Instagram',
-    description: 'В Instagram — короткие заметки, вдохновение и ежедневные мысли.',
+    description: 'В Instagram — короткие заметки, вдохновение и ежедневные мысли',
     link: 'https://www.instagram.com/ann_is_telling',
     button: 'Смотреть профиль',
     icon: instaColor,
@@ -27,7 +27,7 @@ export const contactItems = [
   {
     id: 'telegram',
     title: 'Telegram',
-    description: 'Есть вопрос? Напишите мне в Telegram — я стараюсь отвечать быстро.',
+    description: 'Есть вопрос? Напишите мне в Telegram — я стараюсь отвечать быстро',
     link: 'https://t.me/Ann_Grt',
     button: 'Написать',
     icon: telegramColor,
